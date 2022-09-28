@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image1 {
+    height: 200px;
+    width: 100%;
+}
+
+.image2 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-self: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+h1 {
+    background-color: #276390;
+    text-align: center;
+    padding: 10px;
+}
+
+header h2 {
+    background-color: #0a3143;
+    color: #EFEFEF;
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: #0a3143;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s
+}
+
+nav a:hover,
+.button-send:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main h2,
+h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+ol,
+ul {
+    list-style-position: inside;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.style-list-none {
+    margin-left: 10px;
+}
+
+body {
+    background: linear-gradient(#EFEFEF, rgb(203, 229, 245));
+
+}
+
+.titles {
+    flex-direction: column;
+}
+
+footer {
+    height: 100px;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p11 {
+    margin-left: 0;
+}
+
+th,
+tr,
+tbody,
+td {
+
+    padding: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: solid #0a3143;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    border: solid white;
+    background-color: #0a3143;
+    color: white;
+
+}
+
+tbody tr:nth-child(2n+1) {
+
+    border-bottom: solid gray;
+}
+
+tbody tr:nth-child(4n),
+tbody tr:nth-child(4n+1) {
+    background-color: #276390;
+    color: white;
+}
+
+.main-section {
+
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+label,
+.space-street,
+.space-parent,
+.space-date {
+    margin-bottom: 10px;
+}
+
+.h2-form {
+    text-align: center;
+}
+
+.schools,
+.position,
+.uniform {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.margin-school,
+.margin-position,
+.margin-uniform {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.space,
+.h2-form {
+    margin-bottom: 40px;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+form section p,
+p {
+    text-align: justify;
+}
+
+.button-send {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: #0a3143;
+    color: #EFEFEF;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.maps {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+
+}
+
+.maps:hover {
+    width: 100%;
+    height: 100%;
+}
+
+footer p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .image1 {
+        height: 100px;
+    }
+
+    * {
+        font-size: 16px;
+    }
+
+    .image2 {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .main-section {
+        margin: 0;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .maps {
+        height: 10px;
+        width: 10px;
+    }
+
+    th,
+    tr,
+    tbody,
+    td {
+
+        padding: 0px;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    .p1{
+        flex-direction: column;
+    }
+    .space{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .name{
+        margin: auto;
+        flex-direction: column;
+  
+    }
+    .class{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .gender{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    footer{
+        height: 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .image1 {
+        height: 120px;
+    }
+
+    * {
+        font-size: 16px;
+    }
+
+    .image2 {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .main-section {
+        margin: 0;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .maps {
+        height: 50px;
+        width: 50px;
+    }
+    th,
+    tr,
+    tbody,
+    td {
+
+        padding: 5px;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    .p1{
+        flex-direction: row;
+    }
+    .space{
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+    }
+    .name{
+        flex-direction: row;
+    }
+    .class{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .space{
+        margin-left: 10px;
+    }
+    .gender{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+    .form-final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        height: 70px;
+    }
+}
